@@ -67,9 +67,8 @@ alfanuméricos.
 
 ```
 user 	user.json
-
-
 ```
+
 Exemplo do formato do arquivo JSON: user.json ->
 ```
 {“usuario”:”<Meu_Usuario>”, “senha”:”<Minha_senha>”}
@@ -105,7 +104,7 @@ por cliente simultaneamente. O arquivo que será executado no servidor consiste 
 
 ```
 send <path_to_file>
-``
+```
 
 Ex:
 ```
@@ -137,7 +136,9 @@ o resultado da aplicação executada (em formato .JSON).
 
 #### 3.3.1 - Formato
 
+```
 run
+```
 
 #### 3.3.2 - Retornos
 
@@ -176,7 +177,7 @@ Formato:
 return 305 result.json
 ```
 
-Conteúdo de result.json -> { “result”: ”resultado_da_execucao_e_operacoes” }
+Conteúdo de result.json -> ```{ “result”: ”resultado_da_execucao_e_operacoes” }```
 
 ### 3.3 - QUIT
 
@@ -185,20 +186,16 @@ Comando utilizado para encerrar a conexão entre servidor e o cliente.
 #### 3.3.1 - Formato
 
 ```
-quit <parametro>
+quit<parametro>
 ```
 
-	onde <parametro> pode ter valor 1 ou 2, sendo assim:
+onde <parametro> pode ter valor 1 ou 2, sendo assim:
 
 - quit 1 : Encerra a aplicação sem obter resultados
 - quit 2 : Espera pelo resultado para encerrar a aplicação
 
-				Aborta a execução e encerra a conexão
+Termina a execução, envia os retornos, e deleta os arquivos.
 
-				Termina a execução, envia os retornos, e deleta os arquivos
-
-Quantos clientes podem conectar no servidor por vez?
-Quantos arquivos em paralelo podem ser executados?
 
 ### 4. Descrição dos retornos
 
